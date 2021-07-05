@@ -13,28 +13,30 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
+  <body>
+    <input id="close-menu" class="close-menu" aria-label="Close menu" role="button" type="checkbox" >
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
         <h1>
-          <a href="#intro">Logo</a>
+          <a onclick="getElementById('close-menu').checked=false" href="#home">Logo</a>
         </h1>
 
-        <nav>
+        <nav onclick="getElementById('close-menu').checked=false">
           <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#intro">Intro</a></li>
-            <li><a href="#lorem">Lorem</a></li>
             <li><a href="#top3">top 3</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#pricing">princing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </aside>
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="home" class="intro main-bg section">
       <div class="main-content intro-content">
         <div class="intro-text-content">
           <h2>January Brings Us Firefox 85</h2>
@@ -50,7 +52,7 @@
         </div>
       </div>
     </section>
-    <section id="lorem" class="white-bg section">
+    <section id="intro" class="white-bg section">
       <div class="main-content top3-content">
         <h2>Lorem ipsum</h2>
         <p>
@@ -63,15 +65,13 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
           sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
           incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
-          excepturi animi voluptate.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+          excepturi animi voluptate.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
           sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
           incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
-          excepturi animi voluptate.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+          excepturi animi voluptate.
         </p>
       </div>
     </section>
@@ -110,5 +110,138 @@
         </div>
       </div>
     </section>
+    <section id="gallery" class="grid-one white-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">Gallery</h2>
+        <p class="grid-descricao">Uma Breve Descrião</p>
+
+        <div class="grid">
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=100"
+            alt="imagem randomica "
+          />
+        </div>
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=2"
+            alt="imagem randomica "
+          />
+        </div>
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=84"
+            alt="imagem randomica "
+          />
+        </div>
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=14"
+            alt="imagem randomica "
+          />
+        </div>
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=23"
+            alt="imagem randomica "
+          />
+        </div>
+        <div class="gallery-img">
+          <img
+            src="http://source.unsplash.com/random/360x360?r=90"
+            alt="imagem randomica "
+          />
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="white-bg section">
+      <div class="main-content top3-content">
+        <h2>Pricing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
+          incidunt, iste natus quo fugit!
+        </p>
+        
+          <div class="responsive-table">
+        <table>
+          <caption>Pricing Table</caption>
+          <thead>
+            <tr>
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th>Title 3</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Testando</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      </div>
+    </section>
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>January Brings Us Firefox 85</h2>
+          
+        </div>
+        <div class="intro-img">
+          <img src="assets/img/contato.svg" alt="desenho de programacao" />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contate-me</legend>
+            <div class="form-group">
+              <label for="primeiro-nome">Primeiro Nome</label>
+              <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" name="Sobrenome" id="sobrenome" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Your E-mail">
+            </div>
+            <div class="form-group full-width">
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10 " placeholder="Sua Mensagem "></textarea>
+            
+          </fieldset>
+        </div>
+        <div class="form-group full-width">
+         <button type="submit">Enviar</button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="white-bg footer">
+      <div class="border">
+      <p>Desenvolvido Por Toninho Andrade!</p>
+    </div>
+    </footer>
+    <a class="back-to-top" href="#">❯</a>
   </body>
 </html>
