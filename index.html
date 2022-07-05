@@ -1,177 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/css/estilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <input id="close-menu" class="close-menu" aria-label="Close menu" role="button" type="checkbox" >
-    <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <aside class="menu white-bg">
-      <div class="main-content menu-content">
-        <h1>
-          <a onclick="getElementById('close-menu').checked=false" href="#home">Logo</a>
-        </h1>
 
-        <nav onclick="getElementById('close-menu').checked=false">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#top3">top 3</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#pricing">princing</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="assets/css/estilo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <input id="close-menu" class="close-menu" aria-label="Close menu" role="button" type="checkbox">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1>
+        <a onclick="getElementById('close-menu').checked=false" href="#home">Logo</a>
+      </h1>
+
+      <nav onclick="getElementById('close-menu').checked=false">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#top3">top 3</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#pricing">princing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>January Brings Us Firefox 85</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          ea omnis quidem incidunt sed placeat dolores explicabo natus tempore
+          est, et vitae accusamus tempora odio blanditiis, necessitatibus
+          repudiandae velit ad.
+        </p>
       </div>
-    </aside>
-    <div class="menu-spacing"></div>
+      <div class="intro-img">
+        <img src="assets/img/javaScript.svg" alt="desenho de programacao" />
+      </div>
+    </div>
+  </section>
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Lorem ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
+        incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
+        excepturi animi voluptate.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
+        incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
+        excepturi animi voluptate.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
+        incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
+        excepturi animi voluptate.
+      </p>
+    </div>
+  </section>
 
-    <section id="home" class="intro main-bg section">
-      <div class="main-content intro-content">
-        <div class="intro-text-content">
-          <h2>January Brings Us Firefox 85</h2>
+  <section id="top3" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Top 3</h2>
+      <p class="grid-descricao">Uma Breve Descrião</p>
+
+      <div class="grid">
+        <article>
+          <h3>Teste</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-            ea omnis quidem incidunt sed placeat dolores explicabo natus tempore
-            est, et vitae accusamus tempora odio blanditiis, necessitatibus
-            repudiandae velit ad.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis corporis, quod explicabo omnis incidunt quam neque
+            vitae iure tempore sunt nulla assumenda voluptate qui.
           </p>
+        </article>
+
+        <article>
+          <h3>Teste</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            aut quam libero placeat, reiciendis perferendis harum minus cumque
+            ut dolorem, corporis illum,
+          </p>
+        </article>
+        <article>
+          <h3>Teste</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            aut quam libero placeat, reiciendis perferendis harum minus cumque
+            ut dolorem, corporis illum,
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Gallery</h2>
+      <p class="grid-descricao">Uma Breve Descrião</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=100" alt="imagem randomica " />
         </div>
-        <div class="intro-img">
-          <img src="assets/img/javaScript.svg" alt="desenho de programacao" />
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=2" alt="imagem randomica " />
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=84" alt="imagem randomica " />
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=14" alt="imagem randomica " />
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=23" alt="imagem randomica " />
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=90" alt="imagem randomica " />
         </div>
       </div>
-    </section>
-    <section id="intro" class="white-bg section">
-      <div class="main-content top3-content">
-        <h2>Lorem ipsum</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
-          incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
-          excepturi animi voluptate.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
-          incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
-          excepturi animi voluptate.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
-          incidunt, iste natus quo fugit! Quasi, non. Corrupti obcaecati
-          excepturi animi voluptate.
-        </p>
-      </div>
-    </section>
+  </section>
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Pricing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
+        incidunt, iste natus quo fugit!
+      </p>
 
-    <section id="top3" class="grid-one main-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Top 3</h2>
-        <p class="grid-descricao">Uma Breve Descrião</p>
-
-        <div class="grid">
-          <article>
-            <h3>Teste</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis corporis, quod explicabo omnis incidunt quam neque
-              vitae iure tempore sunt nulla assumenda voluptate qui.
-            </p>
-          </article>
-
-          <article>
-            <h3>Teste</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-              aut quam libero placeat, reiciendis perferendis harum minus cumque
-              ut dolorem, corporis illum,
-            </p>
-          </article>
-          <article>
-            <h3>Teste</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-              aut quam libero placeat, reiciendis perferendis harum minus cumque
-              ut dolorem, corporis illum,
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="gallery" class="grid-one white-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Gallery</h2>
-        <p class="grid-descricao">Uma Breve Descrião</p>
-
-        <div class="grid">
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=100"
-            alt="imagem randomica "
-          />
-        </div>
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=2"
-            alt="imagem randomica "
-          />
-        </div>
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=84"
-            alt="imagem randomica "
-          />
-        </div>
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=14"
-            alt="imagem randomica "
-          />
-        </div>
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=23"
-            alt="imagem randomica "
-          />
-        </div>
-        <div class="gallery-img">
-          <img
-            src="http://source.unsplash.com/random/360x360?r=90"
-            alt="imagem randomica "
-          />
-        </div>
-      </div>
-    </section>
-    <section id="pricing" class="white-bg section">
-      <div class="main-content top3-content">
-        <h2>Pricing</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          sapiente, aliquam nesciunt nihil earum rerum tempore amet harum
-          incidunt, iste natus quo fugit!
-        </p>
-        
-          <div class="responsive-table">
+      <div class="responsive-table">
         <table>
           <caption>Pricing Table</caption>
           <thead>
             <tr>
-            <th>Title 1</th>
-            <th>Title 2</th>
-            <th>Title 3</th>
-          </tr>
+              <th>Title 1</th>
+              <th>Title 2</th>
+              <th>Title 3</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -199,49 +182,50 @@
           </tfoot>
         </table>
       </div>
+    </div>
+  </section>
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>January Brings Us Firefox 85</h2>
+
       </div>
-    </section>
-    <section id="contact" class="intro main-bg section">
-      <div class="main-content intro-content">
-        <div class="intro-text-content">
-          <h2>January Brings Us Firefox 85</h2>
-          
-        </div>
-        <div class="intro-img">
-          <img src="assets/img/contato.svg" alt="desenho de programacao" />
-        </div>
-        <div class="contact-form">
-          <fieldset class="form-grid">
-            <legend>Contate-me</legend>
-            <div class="form-group">
-              <label for="primeiro-nome">Primeiro Nome</label>
-              <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <label for="sobrenome">Sobrenome</label>
-              <input type="text" name="Sobrenome" id="sobrenome" placeholder="First Name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Your E-mail">
-            </div>
-            <div class="form-group full-width">
-              <label for="mensagem">Mensagem</label>
-              <textarea name="mensagem" id="mensagem" cols="30" rows="10 " placeholder="Sua Mensagem "></textarea>
-            
-          </fieldset>
-        </div>
-        <div class="form-group full-width">
-         <button type="submit">Enviar</button>
-        </div>
-        </div>
+      <div class="intro-img">
+        <img src="assets/img/contato.svg" alt="desenho de programacao" />
       </div>
-    </section>
-    <footer id="footer" class="white-bg footer">
-      <div class="border">
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contate-me</legend>
+          <div class="form-group">
+            <label for="primeiro-nome">Primeiro Nome</label>
+            <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="Sobrenome" id="sobrenome" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your E-mail">
+          </div>
+          <div class="form-group full-width">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10 " placeholder="Sua Mensagem "></textarea>
+
+        </fieldset>
+      </div>
+      <div class="form-group full-width">
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer id="footer" class="white-bg footer">
+    <div class="border">
       <p>Desenvolvido Por Toninho Andrade!</p>
     </div>
-    </footer>
-    <a class="back-to-top" href="#">❯</a>
-  </body>
+  </footer>
+  <a class="back-to-top" href="#">❯</a>
+</body>
+
 </html>
